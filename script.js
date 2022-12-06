@@ -46,3 +46,38 @@ function handleGetData(event) {
         tempCarbs=(data.items[0].carbohydrates_total_g + "g")
         tempFat=(data.items[0].fat_total_g + "g")
         tempSugar=(data.items[0].sugar_g + "g")
+
+        
+        $foodName.text(`${tempName}`)
+        $foodProtein.text( `${tempProtein}` ),
+        $foodCalories.text( `${tempCalories}` ),
+        $foodCarbs.text( `${tempCarbs}` ),
+        $foodFat.text( `${tempFat}` ),
+        $foodSugar.text( `${tempSugar}` )
+      })
+      
+ , ( error ) => {
+          console.log( 'bad request', error )
+      }
+   
+
+    }
+    $('#log-meal').click( function(){
+        
+        alert("Meal was added")
+
+        $("#meals").append("<tr class='row text-center'><td class='col-sm-2'>"+ tempName +"</td><td class='col-sm-2'>" + tempCalories + "</td><td class='col-sm-2'>" + tempProtein + "</td><td class='col-sm-2'>" + tempFat + "</td><td class='col-sm-2'>" + tempCarbs + "</td><td class='col-sm-2'>" + tempSugar + "</td><br>");
+
+       
+        // $("#calories").val("");
+        // $("#protein").val("");
+        // $("#total-fat").val("");
+        // $("#carbs").val("");
+       
+    });
+
+  
+    
+  
+handleGetData()
+
