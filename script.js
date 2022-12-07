@@ -56,7 +56,7 @@ function handleGetData(event) {
         $foodSugar.text( `${tempSugar}` )
       })
       
- , ( error ) => {
+    , ( error ) => {
           console.log( 'bad request', error )
       }
    
@@ -67,12 +67,6 @@ function handleGetData(event) {
         alert("Meal was added")
 
         $("#meals").append("<tr class='row text-center'><td class='col-sm-2'>"+ tempName +"</td><td class='col-sm-2'>" + tempCalories + "</td><td class='col-sm-2'>" + tempProtein + "</td><td class='col-sm-2'>" + tempFat + "</td><td class='col-sm-2'>" + tempCarbs + "</td><td class='col-sm-2'>" + tempSugar + "</td><br>");
-
-       
-        // $("#calories").val("");
-        // $("#protein").val("");
-        // $("#total-fat").val("");
-        // $("#carbs").val("");
        
     });
 
