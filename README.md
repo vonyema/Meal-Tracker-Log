@@ -14,7 +14,7 @@
 
 ### Getting Started:
 [Click here to get started!
-](https://github.com/vonyema/Meal-Tracker-Log.git)
+](https://vonyema.github.io/Meal-Tracker-Log/)
 
 ### Future Enhancements:
 - In the future, I want to add an option to select what type of meal it is e.g., Breakfast, Lunch, Dinner, Snack, and Beverage. 
